@@ -1,0 +1,11 @@
+- name: multiplay
+  hosts: local
+  connection: local
+  tasks:
+  - name: text from play1
+    ansible.builtin.debug:
+      msg: "This is from play1"
+
+  - name: text from play2
+    ansible.builtin.debug:
+      msg: "This is from play2"    
