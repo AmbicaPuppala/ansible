@@ -12,7 +12,7 @@
   tasks:
   - name: text from task1
     vars: #task level variables
-    Greet: "Play"
+    Greet: "Hello from server admin"
     ansible.builtin.debug:
       msg: "{{Greet}} "
   - name: print
