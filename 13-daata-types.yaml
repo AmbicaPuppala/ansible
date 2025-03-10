@@ -10,7 +10,7 @@
         - Ansible
         - Docker
         - Kubernetes
-      live: yes #boolean
+      live:yes
       recorded: no
       tools: #dictionary
         ci: Jenkins
