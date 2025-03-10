@@ -1,12 +1,12 @@
 - name: task level variables
   hosts: local
   connection: local
-  vars:
+  vars: #play level variables
     course: "DevOps"
     Duration: 50 hours
   tasks:
   - name: text from task1
-    vars:
+    vars: #task level variables
       course: "ansible"
       duration: 10 hours
     ansible.builtin.debug:
