@@ -4,7 +4,7 @@
   vars_prompt:
     - name: course
       prompt: "Enter course name"
-   - name: Duration
+    - name: Duration
       prompt: "Enter course duration"
   tasks:
   - name: text from task1
