@@ -3,18 +3,15 @@
   connection: local
   vars: #play level variables
     Greet: "Hello from server admin"
+  vars_files:
+    - vars-file.yaml
   vars_prompt:
     - name: print
       prompt: "Enter the message"
-      private: no
-  vars_files:
-    - vars-file.yaml
+      private: false
   tasks:
   - name: text from task1
     vars: #task level variables
     Greet: "Hello from server admin"
     ansible.builtin.debug:
-      msg: "{{Greet}} "
-  - name: print
-    ansible.builtin.debug:
-      msg: "{{Greet}} "
+      msg: "{{Greet}}"
