@@ -1,8 +1,8 @@
 - name: task level variables
   hosts: local
   connection: local
-  vars: #play level variables
-    Greet: "Hello from server admin"
+  # vars: #play level variables
+  #   Greet: "Hello from server admin"
   vars_files:
     - vars-file.yaml
   vars_prompt:
