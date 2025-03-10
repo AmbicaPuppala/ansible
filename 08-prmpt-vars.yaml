@@ -4,6 +4,7 @@
   vars_prompt:
     - name: course
       prompt: "Enter course name"
+      private: no
     - name: Duration
       prompt: "Enter course duration"
   tasks:
