@@ -4,7 +4,7 @@
   # vars: #play level variables
   #   Greet: "Hello from server admin"
   vars_files:
-    - vars-file.yaml
+    # - vars-file.yaml
   vars_prompt:
     - name: print
       prompt: "Enter the message"
