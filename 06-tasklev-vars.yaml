@@ -10,7 +10,7 @@
       course: "ansible"
       duration: 10 hours
     ansible.builtin.debug:
-      msg: "course is {{course}} and duration is {{duration}}"
+      msg: "course is {{course}} and duration is {{Duration}}"
   - name: text from task2
     ansible.builtin.debug:
-      msg: "course is {{course}} and duration is {{duration}}"
+      msg: "course is {{course}} and duration is {{Duration}}"
