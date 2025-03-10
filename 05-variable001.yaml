@@ -7,4 +7,5 @@
   tasks:
     - name: text from play1
       ansible.builtin.debug:
-        msg: "course is "{{ course_name}} and duration is {{ duration}}"
+        msg: "course is {{ course_name}} and duration is {{ duration}}"
+
