@@ -1,0 +1,6 @@
+- name: print the facts
+  hosts: web
+  tasks:
+  - name: text from task1
+    ansible.builtin.debug:
+      msg: "{{ansible_facts}}"
