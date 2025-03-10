@@ -20,4 +20,4 @@
   tasks:
     - name: text from task
       ansible.builtin.debug:
-        msg: "course is {{course}} and duration is {{Duration}} and topics are {{topics}} is it live {{live}} and tools are {{tools}}"
+        msg: "course is {{course}} and duration is {{Duration}} and topics are {{topics}} is it live {{live}} is recorderd available {{recorded}} and tools are {{tools}}"
