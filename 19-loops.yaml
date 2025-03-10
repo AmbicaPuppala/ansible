@@ -9,5 +9,5 @@
     loop:
     - {name: 'mysql', state: 'present'}
     - {name: 'httpd', state: 'absent'}
-    - {name: 'zip', state: 'present'}
-    - {name: 'phython', state: 'present'}
+    - {name: 'zip', state: 'absent'}
+    - {name: 'gcc', state: 'present'}
