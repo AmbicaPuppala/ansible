@@ -10,8 +10,8 @@
       prompt: "Enter the message"
       private: false
   tasks:
-   - name: Print the message
-     vars:
-        Greet: "{{task}}"
-      ansible.builtin.debug:
-        msg: "{{Greet}}"
+  - name: text from task1
+    vars: #task level variables
+      Greet: "Hello from task1"
+    ansible.builtin.debug:
+      msg: "{{Greet}}"
