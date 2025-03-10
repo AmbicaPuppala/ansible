@@ -8,3 +8,7 @@
       ansible.builtin.debug:
          msg: "number{{my_var}} is greater than 10"
       when: my_var > 10
+    - name: text from task2
+      ansible.builtin.debug:
+         msg: "number{{my_var}} is less than 10"
+      when: my_var < 10
