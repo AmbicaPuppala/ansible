@@ -1,9 +1,7 @@
 - name: datatypes
   hosts: local
   connection: local
-  tasks:
-  - name: text from task1
-    vars:
+  vars:
       course: "Devops with AWS"
       Duration: 120 hours
       topics:
@@ -18,5 +16,7 @@
         container: Docker
         orchestration: Kubernetes
         cloud: AWS
+  tasks:
+    - name: text from task1
       ansible.builtin.debug:
         msg: "course is {{course}} and duration is {{Duration}} and topics are {{topics}} is it live {{live}} and tools are {{tools}}"
