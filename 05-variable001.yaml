@@ -5,6 +5,6 @@
     course: "DevOps"
     Duration: "50 hours"
   tasks:
-  - name: text from play1
-    ansible.builtin.debug:
-      msg: "course is "{{ course_name}} and duration is {{ duration}}"
+    - name: text from play1
+      ansible.builtin.debug:
+        msg: "course is "{{ course_name}} and duration is {{ duration}}"
