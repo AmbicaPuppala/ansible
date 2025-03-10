@@ -10,7 +10,7 @@
       prompt: "Enter the message"
       private: false
   tasks:
-  - name: Print variables
+    - name: Print variables
     vars: #task level variables
     Greet: "Hello from server admin"
     ansible.builtin.debug:
