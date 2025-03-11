@@ -43,4 +43,10 @@
     ansible.builtin.debug:
       msg: "course is  {{ name | upper }}"
 
-      
+  - name: min value and max value
+    vars:
+      numbers: [36,78,12,45,892]
+    ansible.builtin.debug:
+      msg: "min value is {{ numbers | min }} and max value is {{ numbers | max }}"
+        
+
