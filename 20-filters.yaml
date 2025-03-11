@@ -10,5 +10,5 @@
     vars:
       courses: "devops,aws,azure,gcp"
     ansible.builtin.debug:
-      msg: "{{ 'courses' | split(',') }}"
+      msg: "courses are {{ courses | split(',') }}"
 
