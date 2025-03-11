@@ -30,3 +30,17 @@
         - {'key': 'platform', 'value': 'joindevops'}
     ansible.builtin.debug:
       msg: "course info  {{ courses | items2dict }}"
+
+  - name: convert Upper to lower
+    vars:
+      name: "DEVOPS"
+    ansible.builtin.debug:
+      msg: "course is  {{ name | lower }}"    
+
+  - name: convert lower to upper    
+    vars:
+      name: "devops"
+    ansible.builtin.debug:
+      msg: "course is  {{ name | upper }}"
+
+      
