@@ -21,3 +21,12 @@
     ansible.builtin.debug:
       msg: "course is  {{ courses | dict2items }}"
 
+
+  - name: convert list to map
+    vars:
+      courses: 
+        - {'key': 'name', 'value': 'devops'}
+        - {'key': 'duration', 'value': '2 months'}
+        - {'key': 'platform', 'value': 'joindevops'}
+    ansible.builtin.debug:
+      msg: "course info  {{ courses | items2dict }}"
