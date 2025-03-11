@@ -5,3 +5,10 @@
   - name: handle undefined variables
     ansible.builtin.debug:
       msg: "hello {{person | default('world')}}"
+
+  - name: convert string to list
+    vars:
+      courses: "devops,aws,azure,gcp"
+    ansible.builtin.debug:
+      msg: "{{ 'courses' | split(',') }}"
+
