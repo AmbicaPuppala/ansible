@@ -12,3 +12,12 @@
     ansible.builtin.debug:
       msg: "courses are {{ courses | split(',') }}"
 
+  - name: convert map to list
+    vars:
+      courses: 
+        name: "devops"
+        duration: "2 months"
+        platform: "joindevops"
+    ansible.builtin.debug:
+      msg: "course is  {{ courses | dict2items }}"
+
