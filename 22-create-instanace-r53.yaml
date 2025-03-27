@@ -1,5 +1,5 @@
 - name: Creating ec2 instances and r53 records
-  hosts: localhost
+  hosts: local
   connection: local
   vars:
     subnet_id: subnet-0e727fe5208897d2f
@@ -21,7 +21,7 @@
       - botocore
   - name: Creating ec2 instances
     amazon.aws.ec2_instance:
-      name: "{{ item }}"
+      name: "{{ item}}"
       subnet_id: "{{ subnet_id }}"
       security_group: "{{ security_group }}"
       instance_type: "{{ instance_type }}"
