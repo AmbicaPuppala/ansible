@@ -4,7 +4,7 @@ regions:
 filters:
   tag:Name: "nginx"
   instance-state-name: running
-  hostnames: "*"
+  hostnames:
    # You can also specify a list in order of precedence for hostname variables.
   - private_ip_address
   compose:
